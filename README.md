@@ -53,3 +53,17 @@ User → S3 Website Endpoint → S3 Bucket
 - Add HTTPS using CloudFront  
 - Build a more advanced static site  
 - Automate deployment with AWS CLI or GitHub Actions  
+
+## 📸 Screenshots
+
+### 1. S3 Bucket List
+![Screenshot 1](screenshots/screenshot #1.png)
+
+### 2. Static Website Hosting Settings
+![Screenshot 2](screenshots/screenshot #2.png)
+
+### 3. Bucket Policy
+![Screenshot 3](screenshots/screenshot #3.png)
+
+### 4. Website in Browser
+![Screenshot 4](screenshots/screenshot #4.png)
