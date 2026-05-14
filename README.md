@@ -57,13 +57,14 @@ User → S3 Website Endpoint → S3 Bucket
 ## 📸 Screenshots
 
 ### 1. S3 Bucket List
-![Screenshot 1](screenshots/screenshot #1.png)
+![Screenshot 1](screenshots/screenshot1.png)
 
 ### 2. Static Website Hosting Settings
-![Screenshot 2](screenshots/screenshot #2.png)
+![Screenshot 2](screenshots/screenshot2.png)
 
 ### 3. Bucket Policy
-![Screenshot 3](screenshots/screenshot #3.png)
+![Screenshot 3](screenshots/screenshot3.png)
 
 ### 4. Website in Browser
-![Screenshot 4](screenshots/screenshot #4.png)
+![Screenshot 4](screenshots/screenshot4.png)
+
