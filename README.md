@@ -1,60 +1,42 @@
-# AWS S3 Static Website Hosting
+# AWS S3 Static Website Hosting Project
 
-## Project Overview
-This project shows how I hosted a simple static website using Amazon S3.  
-I created a bucket, uploaded an index.html file, enabled static website hosting, and configured the bucket policy so the site could be accessed publicly.  
-This is a common task in cloud support and helped me understand how S3 handles permissions and hosting.
+This project demonstrates how to host a static website using Amazon S3.  
+I created an S3 bucket, configured public access, uploaded a simple HTML site, and enabled static website hosting.  
+This project shows understanding of S3 permissions, bucket policies, and AWS console navigation.
 
-## Architecture
-User → S3 Website Endpoint → S3 Bucket
+---
 
-## Services Used
-- Amazon S3  
-- IAM (bucket policy)
+## What This Project Does
+- Hosts a static website using Amazon S3  
+- Configures bucket permissions and public access settings  
+- Uses an S3 bucket policy to allow public reads  
+- Demonstrates how to upload and manage website files in S3  
+- Shows how to test and verify the website endpoint  
 
-## What I Did
-- Created an S3 bucket  
-- Turned off “Block Public Access”  
-- Uploaded an index.html file  
-- Enabled static website hosting  
-- Added a public read bucket policy  
-- Tested the website using the S3 endpoint  
-
-## Example Bucket Policy
-```json
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Sid": "PublicReadGetObject",
-      "Effect": "Allow",
-      "Principal": "*",
-      "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::nahum-s3-website-12345/*"
-    }
-  ]
-}
-```
+---
 
 ## What I Learned
-- How S3 static hosting works  
-- How bucket policies control access  
-- How to fix common issues like 403 errors  
-- How to deploy a basic website on AWS  
+- How S3 buckets store and serve static content  
+- How to enable and configure Static Website Hosting  
+- How to fix common S3 errors such as:  
+  - 403 Access Denied  
+  - Public access blocked  
+  - Incorrect bucket policy  
+- How to structure a simple static website  
+- How to verify the website using the S3 endpoint URL  
 
-## Skills Demonstrated
-- AWS S3  
-- IAM permissions  
-- Troubleshooting  
-- Static website hosting  
+---
 
-## Next Steps
-- Add a custom domain using Route 53  
-- Add HTTPS using CloudFront  
-- Build a more advanced static site  
-- Automate deployment with AWS CLI or GitHub Actions  
+## Technologies Used
+- Amazon S3  
+- AWS Management Console  
+- Bucket Policies (JSON)  
+- Static Website Hosting  
+- HTML  
 
-## 📸 Screenshots
+---
+
+## Screenshots
 
 ### 1. S3 Bucket List
 ![Screenshot 1](screenshots/screenshot1.png)
@@ -68,3 +50,14 @@ User → S3 Website Endpoint → S3 Bucket
 ### 4. Website in Browser
 ![Screenshot 4](screenshots/screenshot4.png)
 
+---
+
+## Why This Project Matters
+Static website hosting is one of the most common beginner AWS tasks.  
+Cloud support engineers troubleshoot S3 issues every day, so this project demonstrates:  
+- Understanding of AWS basics  
+- Ability to fix real S3 errors  
+- Ability to follow AWS documentation  
+- Ability to build and verify cloud resources  
+
+This is a strong portfolio project for anyone starting in cloud.
